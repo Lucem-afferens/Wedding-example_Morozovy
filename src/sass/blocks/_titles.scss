@@ -1,0 +1,90 @@
+.title {
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-size: clamp(38px, 4vw, 60px);
+    &_main {
+        font-size: clamp(18px, 4vw, 28px);
+        font-weight: 600;
+        width: clamp(250px, 30vw, 500px);
+        text-align: left;
+        letter-spacing: 2px;
+        span {
+            font-size: clamp(14px, 3vw, 22px);
+            font-weight: 400;
+        }
+    }
+    &_invite {
+        font-size: clamp(50px, 5vw, 80px);
+        color: #a08143;
+        &-date {
+            color: #a08143;
+        }
+
+        span {
+            display: block;
+        }
+    }
+    &_programm {
+        margin-top: 40px;
+        color: #a08143;
+
+    }
+    &_footer {
+        color: #a08143;
+        text-shadow: 2px 2px 5px #c0c0c0;
+        opacity: .7;
+        font-size: clamp(38px, 4vw, 80px);
+    }
+    &_path {
+        width: 100%;
+        text-align: center;
+        color: #a08143;
+    }
+    &_countdown {
+        width: 100%;
+        text-align: center;
+        text-wrap: pretty; 
+        transform: translateY(20px);
+        font-size: clamp(30px, 4vw, 48px);
+    }
+    &_calendar {
+        color: #a08143;
+    }
+    &_wishes {
+        color: #a08143;
+    }
+    &_form {
+        color: #a08143;
+    }
+}
+
+.descr {
+    font-size: clamp(14px, 3vw, 22px);    
+    text-transform: uppercase;
+    line-height: 1.8rem;
+    text-align: center;
+    &_invite {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &_programm {
+        span {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 400;
+        }
+        font-size: 16px;
+        text-transform: none;
+        font-weight: 400;
+    }
+    &_footer {
+        font-size: 16px;
+    }
+}
+
+.font-vibe {
+    font-family: "Viaoda Libre", serif;
+    font-size: clamp(22px, 3vw, 30px);
+
+}

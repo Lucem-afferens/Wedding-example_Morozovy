@@ -1,0 +1,25 @@
+.restaurant {
+    padding-top: 80px;
+    min-height: 300px;
+    &__wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    &__img {
+        margin-top: 40px;
+        height: 600px;
+        background: url('../img/turandot.jpg') no-repeat 35%/cover fixed;
+        background-position: bottom;
+    }
+    address {
+        font-family: "Great Vibes", cursive;
+        font-weight: 400; 
+        text-transform: none;
+        font-size: clamp(26px, 4vw, 44px);
+        text-wrap: pretty;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+}

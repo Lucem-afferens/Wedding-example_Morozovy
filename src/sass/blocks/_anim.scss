@@ -1,0 +1,18 @@
+.anim {
+    opacity: 0;
+    transition: all 1.5s ease;
+    transform: scale(1.1);
+    overflow: hidden;
+    &_programm {
+        transform: scale(1);
+        transition: all 2s ease;
+    }
+    &_dress-cods {
+        transition: all 3s;
+        transform: scale(1.2);
+    }
+}
+.active {
+    opacity: 1;
+    transform: scale(1)
+}

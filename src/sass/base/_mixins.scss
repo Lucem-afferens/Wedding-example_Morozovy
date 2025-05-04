@@ -1,0 +1,26 @@
+@mixin before_dot {
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 10px;
+        height: 10px;
+        z-index: 2;
+        border-radius: 100%;
+        background: #000;
+    }
+}
+
+@mixin after_line {
+    &:after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 2px;
+        right: 4px;
+        top: 0;
+        background: #000;
+    }
+}

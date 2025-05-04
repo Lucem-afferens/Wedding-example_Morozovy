@@ -1,0 +1,43 @@
+
+@media (max-width: 375px) {
+    .descr {
+        &_programm {
+            font-size: 12px;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .programm {
+        &__wrapper {
+            grid-template-columns: 75px 50vw;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .programm {
+        &__img {
+            &__for-dot {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media (hover: none) {
+    .main {
+        background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .75)) 0% 0%, url('../img/main_bg.jpg') no-repeat 50%/cover scroll;
+        height: 100svh;
+    }
+    .location {
+        &__img {
+            background: url('../img/location.jpg') no-repeat 50%/cover scroll;
+        }
+    }
+    // .restaurant {
+    //     &__img {
+    //         background: url('../img/turandot.jpg') no-repeat 50%/cover scroll;
+    //     }
+    // }
+}

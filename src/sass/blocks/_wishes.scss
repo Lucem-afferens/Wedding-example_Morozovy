@@ -1,0 +1,51 @@
+.wishes {
+    text-align: center;
+    padding-top: 80px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__item {
+        span {
+            text-decoration: underline;
+        }
+    }
+    &__dress-cods {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: grid;
+        justify-content:space-evenly;
+        grid-template-columns: repeat(5, clamp(40px, 12vw, 70px));
+        grid-template-rows: clamp(40px, 12vw, 70px);
+    }
+    &__dress-cod {
+        display: block;
+        border-radius: 100%;
+        &-1 {
+            background: #edc7b7;
+            filter: drop-shadow(0px 0px 10px #edc7b7);
+        }
+        &-2 {
+            background: #eee2dc;
+            filter: drop-shadow(0px 0px 10px #eee2dc);
+        }
+        &-3 {
+            background: #bab2b5;
+            filter: drop-shadow(0px 0px 10px #bab2b5);
+
+        }
+        &-4 {
+            background: #123c69;
+            filter: drop-shadow(0px 0px 10px #123c69);
+
+        }
+        &-5 {
+            background: #ac3b61;
+            filter: drop-shadow(0px 0px 10px #ac3b61);
+
+        }
+    }
+}

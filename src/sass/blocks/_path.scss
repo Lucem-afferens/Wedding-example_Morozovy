@@ -1,0 +1,16 @@
+.path {
+    padding-top: 80px;
+    min-height: 500px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 60px;  
+        align-items: center;
+    }
+    &__map {
+        margin: 0 auto;
+        margin-top: 40px;
+        max-width: 780px;
+    }
+}

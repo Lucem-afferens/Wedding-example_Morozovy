@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Viaoda+Libre&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/*.scss';
+
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 780px;
+    overflow: visible;
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+}
+
+body {
+    background-color: $main-color;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+
+@import 'base/media';
+
+
+
+
+
+
+
+

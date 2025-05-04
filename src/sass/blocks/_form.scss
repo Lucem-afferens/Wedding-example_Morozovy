@@ -1,0 +1,177 @@
+.form {
+    padding-top: 80px;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 20px);
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 100%;
+    }
+    &__text {
+        width: 100%;
+        height: 60px;
+        border-radius: 50px;
+        border: 1px solid #c0c0c0;
+        padding-left: 15px;
+        display: block;
+        font-size: 16px;
+    }
+    &__no-flex {
+        width: 99%;
+        input {
+            margin: 3px;
+            margin-top: 10px;
+            background: rgba(242, 247, 255, 0);
+            width: 99%;
+            &:focus {
+                outline: 1px solid $input-color;
+            }
+
+        }
+    }
+    &__input {
+        &_mr-10 {
+            margin-right: 10px;
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 40px;
+    max-width: 100%;
+    fieldset {
+        width: 100%;
+        legend {
+            font-size: 20px;
+            line-height: 1.8rem;
+            max-width: 100%;
+            padding-left: 2px;
+        }
+    }
+    label {
+        margin: 0;
+        width: 80%;
+    }
+    input {
+        margin-right: 5px;
+        margin-top: 10px;
+        caret-color: $input-color;
+        &:focus {
+            border: 1px solid #c0c0c0;
+            outline: none;
+            border-color: none;
+        }
+        &:checked {
+            accent-color: $input-color;
+            & + label {
+                color: $input-color;
+            }
+        }
+    }
+
+
+
+    .button {
+        width: clamp(150px, 17vw, 250px);
+        max-width: 80%;
+        height: 60px;
+        border-radius: 50px;
+        margin: 0 auto;
+        border: none;
+        box-shadow: 0px 0px 10px #c0c0c0;
+        background: rgba(#a08143, .5);
+        transition: all 500ms ease;
+        &:active {
+            transform: scale(.9);
+            background: rgba(#246433, .3);
+            color: #333;
+        }
+        &__touch {
+            transform: scale(.9);
+            background: rgba(#246433, .3);
+            color: #333;
+        }
+    }
+
+}
+
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(20px);
+    z-index: 9999;
+}
+.toast.show {
+    opacity: .7;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.toast.success {
+    background-color: #ac3b61;
+}
+// .toast.error {
+//     background-color: #da192c;
+// }
+.toast.error {
+    background-color: #ac3b61; // При продакшен и подключении файла send.php вместо этой части кода использовать тот, что закомментирован выше
+}
+
+
+
+
+
+
+// .form {
+//     padding-top: 80px;
+//     &__questionary {
+//         text-align: start;
+//     }
+// }
+
+// label {
+//     display: block;
+//     margin-top: 10px;
+//     position: relative;
+//     float: left;
+// }
+// input, select, textarea {
+//     position: relative;
+//     float: left;
+//     width: 100%;
+//     padding: 8px;
+//     margin-top: 5px;
+//     border: 1px solid #ccc;
+//     border-radius: 50px;
+// }
+// .radio-group, .checkbox-group {
+//     margin-top: 5px;
+// }
+// button {
+//     background-color: #e2b091;
+//     color: white;
+//     padding: 10px;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     width: 100%;
+//     margin-top: 15px;
+// }
+// button:hover {
+//     background-color: #d29b7f;
+// }

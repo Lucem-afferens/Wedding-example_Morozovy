@@ -1,0 +1,11 @@
+.footer {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        align-items: center;
+    }
+}
